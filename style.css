@@ -21,3 +21,8 @@ h5 {
   margin: 0 auto;
   padding-bottom: 15px;
 }
+
+.list-group-item {
+  background-color: black;
+  color: #fff;
+}
