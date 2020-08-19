@@ -1,0 +1,24 @@
+{
+  "name": "rateflix",
+  "version": "1.0.0",
+  "description": "an app to search and see movie information, including scores, awards, trailers, and streaming platfromsm, and keep your own ratings saved on lcoal storage",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghudson46/rateflix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghudson46/rateflix/issues"
+  },
+  "homepage": "https://github.com/ghudson46/rateflix#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.3.3"
+  }
+}
