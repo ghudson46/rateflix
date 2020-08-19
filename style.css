@@ -1,0 +1,23 @@
+body {
+  background: yellow;
+}
+
+img {
+  height: 400px;
+  width: 266px;
+}
+
+h5 {
+  max-width: 266px;
+  position: relative;
+  left: calc(50% - 133px);
+}
+
+.btn {
+ 
+}
+
+.col-md-3 {  
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
