@@ -9,12 +9,14 @@ $(document).ready(() => {
 });
 
 function getMovies(searchText){
-  axios.get('https://www.omdbapi.com/?s=' + searchText + '&apikey=db8b059d')
+
+  axios.get('https://www.omdbapi.com/?s=' + searchText + '&type=movie&apikey=db8b059d')
     .then((response) => {
       console.log(response);
       let movies = response.data.Search;
       let output = '';
       $.each(movies, (index, movie) => {
+        if(movie.imdbID !== null || movie.Poster !== "N/A") {
         output += `
           <div class="col-md-3">
             <div class="well text-center">
@@ -24,12 +26,15 @@ function getMovies(searchText){
             </div>
           </div>
         `;
+        } else {
+          output += '';       
+         };
       });
 
       $('#movies').html(output);
     })
     .catch((err) => {
-      console.log(err);
+      alert('That search yieled 0 results. Check your spelling and punctuation');
     });
 }
 
@@ -75,11 +80,22 @@ function getMovie(){
             <a href="index.html" class="btn btn-default">Go Back To Search</a>
           </div>
         </div>
+        <p>rate this movie</p>
+        <input type="text" placeholder="give a score 1-100">
+        <button id="scoreBtn">Submit Score</button>
       `;
 
       $('#movie').html(output);
     })
     .catch((err) => {
-      console.log(err);
+      let output =`
+      <div class="row">
+        <div class="col-md-8">
+          <h2>This movie has no available details</h2>
+        </div>
+      </div>
+    `;
+
+    $('#movie').html(output);
     });
 }
