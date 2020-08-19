@@ -1,26 +1,24 @@
+$(document).ready(() => {
+  $('#searchForm').on('submit', (e) => {
+    e.preventDefault();
+    let searchText = $("#searchText").val();
+    getMovies(searchText);
+  });
 
-const searchButtonEl = document.querySelector("#search");
-const inputEl = document.querySelector("#inputValue");
+  function getMovies(searchText) {
+  
+  axios.get("http://www.omdbapi.com/?s=" + searchText + "&type=movie&plot=full&apikey=db8b059d")
+    .then(response => {
+      console.log(response.data.Search);
+      let movies = response.data.Search;
+      let output = '';
+    }).catch(error => {
+      console.log(error);
+    });
 
+  }
 
-searchButtonEl.onclick = function(event) {
-  event.preventDefault();
-  let movie = inputEl.value;
-  console.log(movie);
-
-  const queryUrl = "http://www.omdbapi.com/?s=" + movie + "&apikey=db8b059d";
-
-  $.ajax({
-    URL: queryUrl,
-    method: 'GET'
-  }).then(data => {
-    console.log(data);
-  }).catch(err => {
-    console.log(error);
-  })
-
-
-}
+});
 
 
 
