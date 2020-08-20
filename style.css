@@ -1,29 +1,165 @@
-body {
-  background:#000;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Limelight', cursive;
   color: #fff;
+  background-color: #bebebe;
 }
 
-img {
+html, body, .container, .jumbotron {
+  background: #bebebe;
+}
+
+h3 {
+  color: #fe53bb;
+  text-shadow: 1px 1px 2px #09fbd3;
+}
+
+button {
+  background: #fe53bb;
+  border: 1px solid #09fbd3;
+  color: #09fbd3;
+  border-radius: 50%;
+}
+
+img { 
   height: 400px;
   width: 266px;
+  box-shadow: 2px 2px 5px #fe53bb;
+}
+
+li {
+  color: black;
+  background: #bebebe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+strong {
+  background: #bebebe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0 10px 0;
 }
 
 h5 {
-  max-width: 266px;
-  position: relative;
-  left: calc(50% - 133px);
+  margin-top: 15px;
+  max-width: 265px;
+  text-shadow: .5px .5px .5px #09fbd3;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #bebebe;
+}
+
+.thumbnail {
+  width: 333px;
+  height: 500px;
 }
 
 .btn {
- 
-}
-
-.col-md-3 {  
-  margin: 0 auto;
-  padding-bottom: 15px;
+  background: #fe53bb;
+  border: 1px solid #09fbd3;
+  color: #09fbd3;
+  border-radius: 50%;
 }
 
 .list-group-item {
-  background-color: black;
-  color: #fff;
+  background: #bebebe;
+  border: none;
 }
+
+.btn:hover {
+  background: #fe53bb;
+  border: 1px solid #09fbd3;
+  color: #09fbd3;
+  border-radius: 50%;
+}
+
+.btn:focus {
+  background: #fe53bb;
+  border: 1px solid #09fbd3;
+  color: #09fbd3;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  color: #09fbd3;
+  text-shadow: 2px 2px 5px #fe53bb;
+  font-size: 48px;
+  margin-left: calc(50% - 24px);
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #09fbd3;
+  text-shadow: 2px 2px 5px #fe53bb;
+  font-size: 48px;
+  transform: scale(1.05);
+}
+
+.movieInfo {
+  background: #bebebe;
+}
+
+.well {
+  border: none;
+}
+
+
+
+#search {
+  padding: 5px;
+  margin: 10px 0 0 0;
+  width: 80px;
+  position: relative;
+  left: calc(50% - 40px);
+}
+
+#searchText {
+  width: 45%;
+  position: relative;
+  left: calc(50% - 22.5%);
+}
+
+#movieDetails {
+  position: relative;
+  bottom: 0;
+  margin: 0 0 20px 0;
+}
+
+#scoreBtn {
+  padding: 5px;
+}
+
+#randomBtn {
+  padding: 5px;
+  width: 120px;
+  margin-left: calc(50% - 60px);
+}
+
+#selectionContainer {
+position: relative;
+top: 0;
+left: -500px;
+}
+
+#movie-btn {
+  position: relative;
+  top: -150px;
+  left: 180px;
+}
+
+

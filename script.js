@@ -16,19 +16,17 @@ function getMovies(searchText){
       let movies = response.data.Search;
       let output = '';
       $.each(movies, (index, movie) => {
-        if(movie.imdbID !== null || movie.Poster !== "N/A") {
+
         output += `
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
               <h5>${movie.Title}</h5>
-              <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
+              <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" id="movieDetails" href="#">Movie Details</a>
             </div>
           </div>
-        `;
-        } else {
-          output += '';       
-         };
+        `;   
+         
       });
 
       $('#movies').html(output);
@@ -57,7 +55,7 @@ function getMovie(){
           <div class="col-md-4">
             <img src="${movie.Poster}" class="thumbnail">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 movie-info">
             <h2>${movie.Title} (${movie.Year})</h2>
             <ul class="list-group">
               <li class="list-group-item"><strong>Director:</strong> ${movie.Director}</li>
@@ -81,7 +79,7 @@ function getMovie(){
           </div>
         </div>
         <p>rate this movie</p>
-        <input type="text" placeholder="give a score 1-100">
+        <input id="scoreValue"type="text" placeholder="give a score 1-100">
         <button id="scoreBtn">Submit Score</button>
       `;
 
@@ -92,10 +90,12 @@ function getMovie(){
       <div class="row">
         <div class="col-md-8">
           <h2>This movie has no available details</h2>
+          <a href="index.html"><buton class="btn">Return to Search</button></a>
         </div>
       </div>
     `;
 
     $('#movie').html(output);
     });
+
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="./assets/popcorn.png">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Date Night at Home</title>
+  </head>
+
+  <body>
+   
+      <!-- RANDOM MOVIE GENERATOR -->
+      <div class="jumbotron jumbotron-fluid movie" id="movie">
+        <div class="container-fluid">
+          <div class="row row-movie-search">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-movie-text text-center">
+              <h3 class="movie-header">
+              </h3>
+              <div class="movie-error-box">
+                <p class="movie-error-text"></p>
+              </div>
+            </div>
+            <div class="col-md-6 movie-inputs"> 
+              
+              <!-- Movie Year Inputs -->
+            <div id="selectionContainer">
+              <h3 class="date-selector">Show me movies</h3>
+              <!-- From -->
+              <div class="form-group row">
+                <div class="col-md-10">
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">from</span>
+                    </div>
+                    <input type="text" class="form-control earliest-year-selector" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="1980">
+                  </div>
+                </div>
+              </div>
+              <!-- To -->
+              <div class="form-group row">
+                <div class="col-md-10">
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend ">
+                      <span class="input-group-text" id="inputGroup-sizing-default">until</span>
+                    </div>
+                    <input type="text" class="form-control latest-year-selector" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="2020">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Genre Input -->
+              <h3 class="genre-selector">that are about...</h3>
+              <div class="form-group row">
+                <div class="col-md-10">
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">Genre</label>
+                    </div>
+                    <select class="custom-select" id="genre-input">
+                      <option selected>Choose...</option>
+                      <option value="28">Action</option>
+                      <option value="12">Adventure</option>
+                      <option value="16">Animation</option>
+                      <option value="35">Comedy</option>
+                      <option value="80">Crime</option>
+                      <option value="99">Documentary</option>
+                      <option value="18">Drama</option>
+                      <option value="10751">Family</option>
+                      <option value="14">Fantasy</option>
+                      <option value="36">History</option>
+                      <option value="27">Horror</option>
+                      <option value="10402">Music</option>
+                      <option value="9648">Mystery</option>
+                      <option value="10749">Romance</option>
+                      <option value="878">Science Fiction</option>
+                      <option value="53">Thriller</option>
+                      <option value="10752">War</option>
+                      <option value="37">Western</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <!-- Movie button -->
+          <div class="text-center btn-row">
+            <button type="button" class="btn btn-outline-light btn-lg movie-btn" id="movie-btn">Find My Movie</button>
+          </div>
+          <div id="movies" class="container">
+            <div class="row movie-row">   
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Local Script -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
