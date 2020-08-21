@@ -22,7 +22,7 @@ function getMovies(searchText){
             <div class="well text-center">
               <img src="${movie.Poster}">
               <h5>${movie.Title}</h5>
-              <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" id="movieDetails" href="#">Movie Details</a>
+              <a onclick="movieSelected('${movie.imdbID}')"  id="movieDetails" href="#"><button>Movie Details</button></a>
             </div>
           </div>
         `;   
@@ -53,33 +53,35 @@ function getMovie(){
       let output =`
         <div class="row">
           <div class="col-md-4">
+          <h2>${movie.Title} (${movie.Year})</h2>
             <img src="${movie.Poster}" class="thumbnail">
           </div>
           <div class="col-md-8 movie-info">
-            <h2>${movie.Title} (${movie.Year})</h2>
-            <ul class="list-group">
-              <li class="list-group-item"><strong>Director:</strong> ${movie.Director}</li>
-              <li class="list-group-item"><strong>Genre:</strong> ${movie.Genre}</li>
-              <li class="list-group-item"><strong>Rated:</strong> ${movie.Rated}</li>
-              <li class="list-group-item"><strong>Runtime:</strong> ${movie.Runtime}</li>
-              <li class="list-group-item"><strong>Critic Score:</strong> ${movie.Ratings[1].Value}</li>
-              <li class="list-group-item"><strong>Actors:</strong> ${movie.Actors}</li>
-              <li class="list-group-item"><strong>Awards:</strong> ${movie.Awards}</li>
-              
-            </ul>
-          </div>
-        </div>
-        <div class="row">
+
+          <div class="row">
           <div class="well">
             <h3>Plot</h3>
             ${movie.Plot}
             <hr>
-            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-            <a href="index.html" class="btn btn-default">Go Back To Search</a>
+            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank"><button class="imdbBtn">View IMDB</button></a>
+            <a href="index.html"><button class="backBtn">Go Back To Search</button></a>
           </div>
         </div>
-        <p>rate this movie</p>
-        <input id="scoreValue"type="text" placeholder="give a score 1-100">
+            
+            <div>
+              <p><strong>Director:</strong> ${movie.Director}</p>
+              <p><strong>Genre:</strong> ${movie.Genre}</p>
+              <p><strong>Rated:</strong> ${movie.Rated}</p>
+              <p><strong>Runtime:</strong> ${movie.Runtime}</p>
+              <p><strong>Critic Score:</strong> ${movie.Ratings[1].Value}</p>
+              <p><strong>Actors:</strong> ${movie.Actors}</p>
+              <p><strong>Awards:</strong> ${movie.Awards}</p>
+              
+            </div>
+          </div>
+        </div>
+        
+        <input id="scoreValue"type="text" placeholder="rate this movie 1-100">
         <button id="scoreBtn">Submit Score</button>
       `;
 

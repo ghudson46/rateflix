@@ -1,165 +1,167 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Limelight', cursive;
-  color: #fff;
-  background-color: #bebebe;
+  font-family: "Big Noodle",Arial,serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #282c34;
+  color: white;
 }
 
-html, body, .container, .jumbotron {
-  background: #bebebe;
-}
-
-h3 {
-  color: #fe53bb;
-  text-shadow: 1px 1px 2px #09fbd3;
+h1 {
+  float: right;
+  margin: 15px 30px 0 0;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px goldenrod;
 }
 
 button {
-  background: #fe53bb;
-  border: 1px solid #09fbd3;
-  color: #09fbd3;
-  border-radius: 50%;
-}
-
-img { 
-  height: 400px;
-  width: 266px;
-  box-shadow: 2px 2px 5px #fe53bb;
-}
-
-li {
-  color: black;
-  background: #bebebe;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-}
-
-strong {
-  background: #bebebe;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-}
-
-input {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-}
-
-h3 {
-  text-align: center;
-  margin: 20px 0 10px 0;
+  background-color: goldenrod;
+  color: #282c34;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 1px;
+  font-weight: 600;
+  width: 120px;
 }
 
 h5 {
-  margin-top: 15px;
-  max-width: 265px;
-  text-shadow: .5px .5px .5px #09fbd3;
+  font-weight: 800px;
+  max-width: 300px;
+  position: relative;
+  top: 5px;
+  left: calc(50% - 150px);
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  color: #bebebe;
+h3 {
+  font-weight: 600;
+  color: goldenrod;
 }
 
-.thumbnail {
-  width: 333px;
-  height: 500px;
+form {
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.btn {
-  background: #fe53bb;
-  border: 1px solid #09fbd3;
-  color: #09fbd3;
-  border-radius: 50%;
+input {
+  position: relative;
+  opacity: 80%;
+  top: -60px;
+  
 }
 
-.list-group-item {
-  background: #bebebe;
-  border: none;
+strong {
+  color: goldenrod;
+  font-size: 24px;
 }
 
-.btn:hover {
-  background: #fe53bb;
-  border: 1px solid #09fbd3;
-  color: #09fbd3;
-  border-radius: 50%;
+img {
+  border: 1px solid goldenrod;
 }
 
-.btn:focus {
-  background: #fe53bb;
-  border: 1px solid #09fbd3;
-  color: #09fbd3;
-  border-radius: 50%;
+.jumbotron {
+  background-image: url('assets/hollywood-sign.jpg');
+  background-size: 421px 180px;
+  position: relative;
+  top: 160px;
 }
 
-.navbar-brand {
-  color: #09fbd3;
-  text-shadow: 2px 2px 5px #fe53bb;
-  font-size: 48px;
-  margin-left: calc(50% - 24px);
+.logo {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 20px 0 0 20px;
+  border: 3px solid #282c34;
 }
 
-.navbar-brand:hover {
-  text-decoration: none;
-  color: #09fbd3;
-  text-shadow: 2px 2px 5px #fe53bb;
-  font-size: 48px;
-  transform: scale(1.05);
+.container, #movies {
+  position: relative;
+  top: 100px;
 }
-
-.movieInfo {
-  background: #bebebe;
-}
-
-.well {
-  border: none;
-}
-
 
 
 #search {
-  padding: 5px;
-  margin: 10px 0 0 0;
-  width: 80px;
   position: relative;
-  left: calc(50% - 40px);
+  width: 100PX;
+  top: 7px;
+  left: calc(50% - 50px);
+  border-radius: 5px;
+  background-color: goldenrod;
+  color: #282c34;
+  border: #282c34;
+  font-weight: 600;
 }
 
-#searchText {
-  width: 45%;
+#search-text {
   position: relative;
-  left: calc(50% - 22.5%);
+  bottom: 100px;
 }
 
-#movieDetails {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    
+h1 {
+  float: right;
+  margin: 15px 40px 0 0;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px gold;
+}
+    
+form {
+  background-color: rgba(0, 0, 0, 0);
+}
+    
+input {
   position: relative;
-  bottom: 0;
-  margin: 0 0 20px 0;
+  opacity: 80%;
+  top: -60px;
 }
 
-#scoreBtn {
-  padding: 5px;
+button {
+  background-color: gold !important;
+  margin-bottom: 20px;
 }
 
-#randomBtn {
-  padding: 5px;
-  width: 120px;
-  margin-left: calc(50% - 60px);
+h5 {
+  max-width: 100px ;
 }
 
-#selectionContainer {
-position: relative;
-top: 0;
-left: -500px;
+    
+.logo {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 20px 0 0 20px;
 }
 
-#movie-btn {
+.container, #movies {
   position: relative;
-  top: -150px;
-  left: 180px;
+  top: 100px;
+}
+
+.well {
+  margin-bottom:  20px;
 }
 
 
+#search {
+  position: relative;
+  width: 100PX;
+  top: 10px;
+  left: calc(50% - 50px);
+  border-radius: 5px;
+}
+
+#search-text {
+  position: relative;
+  bottom: 100px;
+}
+
+
+
+}

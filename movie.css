@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Big Noodle",Arial,serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #282c34;
+  color: white;
+}
+
+h1 {
+  float: right;
+  margin: 15px 30px 0 0;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px goldenrod;
+}
+
+button {
+  background-color: goldenrod;
+  color: #282c34;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 1px;
+  font-weight: 600;
+  width: 120px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  color: goldenrod;
+  margin-bottom: 20px;
+}
+
+h5 {
+  max-width: 300px;
+  position: relative;
+  top: 5px;
+  left: calc(50% - 150px);
+}
+
+h3 {
+  font-weight: 600;
+  color: goldenrod;
+  text-align: center;
+  max-width: 400px;
+}
+
+strong {
+  color: goldenrod;
+  font-size: 18px;
+}
+
+img {
+  position: relative;
+  left: calc(50% - 150px);
+  border: 1px solid goldenrod;
+  margin-bottom: 20px;
+}
+
+input {
+  background-color: white;
+  color: #282c34;
+  padding: 1px 1px 1px 4px;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  margin: 10px 0 10px -35px;
+  border: 1px solid #282c34;
+}
+
+.imdbBtn {
+margin-left: 30px;
+}
+
+.backBtn {
+  width: 160px;
+  margin-left: 10px;
+}
+
+#homeBtn {
+  width: 100px;
+  position: relative;
+  top: 5px;
+  left: calc(50% - 50px);
+  margin-bottom: 20px;
+}
