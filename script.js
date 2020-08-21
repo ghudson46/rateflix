@@ -2,7 +2,7 @@
   
 $(document).ready(() => {
   $('#searchForm').on('submit', (e) => {
-    let searchText = $('#searchText').val();
+    let searchText = $('#searchText').val().trim();
     getMovies(searchText);
     e.preventDefault();
   });
@@ -16,20 +16,19 @@ function getMovies(searchText){
       let movies = response.data.Search;
       let output = '';
       $.each(movies, (index, movie) => {
-
         output += `
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
-              <h5>${movie.Title}</h5>
+              <h5>${movie.Title} (${movie.Year})</h5>
               <a onclick="movieSelected('${movie.imdbID}')"  id="movieDetails" href="#"><button>Movie Details</button></a>
             </div>
           </div>
-        `;   
+        `; 
          
-      });
-
+      }); 
       $('#movies').html(output);
+      
     })
     .catch((err) => {
       alert('That search yieled 0 results. Check your spelling and punctuation');

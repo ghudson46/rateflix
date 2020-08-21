@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: "Big Noodle",Arial,serif;
@@ -97,19 +97,35 @@ img {
 #search-text {
   position: relative;
   bottom: 100px;
-}
+} */
 
 @media only screen 
-  and (max-device-width: 480px)
+  and (max-width: 480px)
   {
 
-    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Big Noodle",Arial,serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #282c34;
+      color: white;
+    }
+
+body {
+  background-color: #282c34;
+}
+
 h1 {
   float: right;
   margin: 15px 40px 0 0;
   font-size: 64px;
   font-weight: 600;
-  text-shadow: 1px 1px 5px gold;
+  text-shadow: 2px 2px 5px goldenrod;
+}
+
+img {
+  border: 2px solid goldenrod;
 }
     
 form {
@@ -123,13 +139,34 @@ input {
 }
 
 button {
-  background-color: gold !important;
+  background-color: goldenrod !important;
   margin-bottom: 20px;
+  color: #282c34;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  padding: 1px;
+  font-weight: 600;
 }
 
 h5 {
-  max-width: 100px ;
+  width: 300px ;
   margin-bottom: 50px;
+  position: relative;
+  top: 30px;
+  left: calc(50% - 150px);
+}
+
+a {
+  color: #282c34;
+}
+
+.jumbotron {
+background-image: url("assets/hollywood-sign.jpg");
+background-size: 100% 191.5px;
+width: 95%;
+position: relative;
+top: 100px;
+left: 2.5%;
 }
 
     
@@ -138,6 +175,7 @@ h5 {
   height: 100px;
   width: 100px;
   margin: 20px 0 0 20px;
+  border: 3px solid #282c34;
 }
 
 .container, #movies {
@@ -161,6 +199,13 @@ h5 {
 #search-text {
   position: relative;
   bottom: 100px;
+  font-weight: 700;
+  color: goldenrod;
+  text-shadow: 1px 1px black;
+}
+
+#movieDetails {
+  color: #282c34 !important;
 }
 
 
