@@ -2,101 +2,264 @@
   margin: 0;
   padding: 0;
   font-family: "Big Noodle",Arial,serif;
-  -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      color: white;
+}
+
+body {
   background-color: #282c34;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
   color: white;
+  text-shadow: 3px 3px 3px goldenrod;
+  font-size: 90px;
+  font-weight: 700;
+  float: right;
+  margin: 30px 400px 0 0;
+}
+
+h2 {
+  color: goldenrod;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: goldenrod;
+  text-shadow: 1px 1px black;
+}
+
+h5 {
+  width: 333px;
+  color: white;
+  position: relative;
+  top: 10px;
+  left: calc(50% - 166.5px);
+  margin-bottom: 20px;
+}
+
+img {
+  height: 500px;
+  width: 333px;
+  border: 2px solid goldenrod;
+}
+
+strong {
+  font-size: 20px;
+  color: goldenrod;
+  margin-right: 10px;
+}
+
+input {
+  margin: 40px 20px 0 50px;
+}
+
+.backBtn {
+  width: 170px;
+}
+
+.movie-info {
+  width: 50%;
+  position: relative;
+  left: 60px;
+}
+
+.imdbBtn {
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.jumbotron {
+  width: 95%;
+  background-image: url("assets/hollywood-sign.jpg");
+  background-size: 100% 300px;
+  position: relative;
+  top: 100px;
+  left: 2.5%;
+}
+
+
+.logo {
+  position: relative;
+  left: 400px;
+  top: 20px;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 50px;
+  border: 3px solid #282c34;
+}
+
+#moviesContainer {
+  position: relative;
+  top: 200px;
+}
+
+#searchText {
+  width:  500px;
+  position: relative;
+  top: -50px;
+  left: calc(50% - 250px);
+}
+
+#quantity {
+  color: #282c34;
+}
+
+#homeBtn {
+  position: relative;
+  width: 80px;
+  left: calc(50% - 40px);
+  margin-bottom: 50px;
+}
+
+button, #movieDetails {
+  margin-bottom: 20px;
+  color: #282c34;
+  background: goldenrod;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 125px;
+  padding: 1px 0;
+}
+
+#search {
+  width: 100px;
+  position: relative;
+  top: 50px;
+  left: calc(50% - 50px);
+  background-color: goldenrod;
+  color: #282c34;
+  border: 2px solid #282c34;
+  border-radius: 5px;
+}
+
+#search-text {
+  color: goldenrod;
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 5px solid black;
+  position: relative;
+  bottom: 150px;
+}
+@media only screen 
+  and (max-width: 480px)
+  {
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Big Noodle",Arial,serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #282c34;
+      color: white;
+    }
+
+body {
+  background-color: #282c34;
 }
 
 h1 {
   float: right;
-  margin: 15px 30px 0 0;
+  margin: 15px 40px 0 0;
   font-size: 64px;
   font-weight: 600;
-  text-shadow: 1px 1px 5px goldenrod;
-}
-
-button {
-  background-color: goldenrod;
-  color: #282c34;
-  border: 1px solid #282c34;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 1px;
-  font-weight: 600;
-  width: 120px;
-}
-
-h2 {
-  text-align: center;
-  font-weight: 600;
-  color: goldenrod;
-  margin-bottom: 20px;
-}
-
-h5 {
-  max-width: 300px;
-  position: relative;
-  top: 5px;
-  left: calc(50% - 150px);
-}
-
-h3 {
-  font-weight: 600;
-  color: goldenrod;
-  text-align: center;
-  max-width: 400px;
-}
-
-strong {
-  color: goldenrod;
-  font-size: 18px;
+  text-shadow: 2px 2px 5px goldenrod;
 }
 
 img {
-  position: relative;
-  left: calc(50% - 150px);
   border: 2px solid goldenrod;
-  margin-bottom: 20px;
+}
+    
+form {
+  background-color: rgba(0, 0, 0, 0);
+}
+    
+input {
+  position: relative;
+  opacity: 80%;
+  top: -60px;
 }
 
-input {
-  background-color: white;
+button {
+  background-color: goldenrod !important;
+  margin-bottom: 20px;
   color: #282c34;
-  padding: 1px 1px 1px 4px;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  padding: 1px;
+  font-weight: 600;
+}
+
+h5 {
+  width: 300px ;
+  margin-bottom: 50px;
+  position: relative;
+  top: 30px;
+  left: calc(50% - 150px);
+}
+
+a {
+  color: #282c34;
+}
+
+.jumbotron {
+background-image: url("assets/hollywood-sign.jpg");
+background-size: 100% 191.5px;
+width: 95%;
+position: relative;
+top: 100px;
+left: 2.5%;
+}
+
+    
+.logo {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 20px 0 0 20px;
+  border: 3px solid #282c34;
+}
+
+.container, #movies {
+  position: relative;
+  top: 100px;
 }
 
 .well {
-  width: 350px;
+  margin-bottom:  20px;
+}
+
+
+#search {
   position: relative;
-  left: calc(50% - 175px);
-}
-
-.logo {
-  height: 100px;
-  width: 100px;
-  margin: 10px 0 10px -35px;
-  border: 1px solid #282c34;
-}
-
-
-.imdbBtn {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.backBtn {
-  width: 160px;
-}
-
-#homeBtn {
-  width: 100px;
-  position: relative;
-  top: 5px;
+  width: 100PX;
+  top: 10px;
   left: calc(50% - 50px);
-  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-#scoreValue {
-  margin-bottom: 30px;
+#search-text {
+  position: relative;
+  bottom: 100px;
+  font-weight: 700;
+  color: goldenrod;
+  text-shadow: 1px 1px black;
+}
+
+#movieDetails {
+  color: #282c34 !important;
+}
+
+
 }

@@ -17,7 +17,7 @@ function getMovies(searchText){
       let output = '';
       $.each(movies, (index, movie) => {
         output += `
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="well text-center">
               <img src="${movie.Poster}">
               <h5>${movie.Title} (${movie.Year})</h5>
@@ -58,7 +58,7 @@ function getMovie(){
           <div class="col-md-8 movie-info">
 
           <div class="row">
-          <div class="well">
+          <div id="plotBox" class="well">
             <h3>Plot</h3>
             ${movie.Plot}
             <hr>
@@ -80,8 +80,10 @@ function getMovie(){
           </div>
         </div>
         
-        <input id="scoreValue"type="text" placeholder="rate this movie 1-100">
+      
+        <input type="number" id="quantity" name="quantity" min="1" max="100">
         <button id="scoreBtn">Submit Score</button>
+      
       `;
 
       $('#movie').html(output);
