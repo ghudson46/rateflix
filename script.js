@@ -62,8 +62,7 @@ function getMovie(){
             <h3>Plot</h3>
             ${movie.Plot}
             <hr>
-            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank"><button class="imdbBtn">View IMDB</button></a>
-            <a href="index.html"><button class="backBtn">Go Back To Search</button></a>
+            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank"><button class="imdbBtn">VIEW IMDB</button></a>
           </div>
         </div>
             
@@ -79,10 +78,7 @@ function getMovie(){
             </div>
           </div>
         </div>
-        
-      
-        <input type="number" id="quantity" name="quantity" min="1" max="100">
-        <button id="scoreBtn">Submit Score</button>
+
       
       `;
 
@@ -93,7 +89,7 @@ function getMovie(){
       <div class="row">
         <div class="col-md-8">
           <h2>This movie has no available details</h2>
-          <a href="index.html"><buton class="btn">Return to Search</button></a>
+          <a href="index.html"><buton class="btn">RETURN TO SEARCH</button></a>
         </div>
       </div>
     `;
