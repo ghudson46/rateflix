@@ -68,7 +68,7 @@ function getMovie(){
           </div>
         </div>
             
-            <div>
+            <div class="info">
               <p><strong>Director:</strong> ${movie.Director}</p>
               <p><strong>Genre:</strong> ${movie.Genre}</p>
               <p><strong>Rated:</strong> ${movie.Rated}</p>
@@ -100,4 +100,7 @@ function getMovie(){
     $('#movie').html(output);
     });
 
+    $("#scoreBtn").on("click", function saveScore() {
+      localStorage.setItem("userScore", 95);
+    });
 }

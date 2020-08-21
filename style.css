@@ -32,11 +32,12 @@ h5 {
   position: relative;
   top: 5px;
   left: calc(50% - 150px);
+  margin: 10px 0 20px 0;
 }
 
 h3 {
   font-weight: 600;
-  color: goldenrod;
+  color: goldenrod;;
 }
 
 form {
@@ -74,6 +75,7 @@ img {
   border: 3px solid #282c34;
 }
 
+
 .container, #movies {
   position: relative;
   top: 100px;
@@ -98,10 +100,8 @@ img {
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  {
 
     
 h1 {
@@ -129,6 +129,7 @@ button {
 
 h5 {
   max-width: 100px ;
+  margin-bottom: 50px;
 }
 
     

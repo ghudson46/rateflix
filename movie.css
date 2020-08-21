@@ -55,7 +55,7 @@ strong {
 img {
   position: relative;
   left: calc(50% - 150px);
-  border: 1px solid goldenrod;
+  border: 2px solid goldenrod;
   margin-bottom: 20px;
 }
 
@@ -64,6 +64,13 @@ input {
   color: #282c34;
   padding: 1px 1px 1px 4px;
 }
+
+.well {
+  width: 350px;
+  position: relative;
+  left: calc(50% - 175px);
+}
+
 .logo {
   height: 100px;
   width: 100px;
@@ -71,13 +78,15 @@ input {
   border: 1px solid #282c34;
 }
 
+
 .imdbBtn {
-margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .backBtn {
   width: 160px;
-  margin-left: 10px;
 }
 
 #homeBtn {
@@ -86,4 +95,8 @@ margin-left: 30px;
   top: 5px;
   left: calc(50% - 50px);
   margin-bottom: 20px;
+}
+
+#scoreValue {
+  margin-bottom: 30px;
 }
