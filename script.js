@@ -60,7 +60,7 @@ function getMovie(){
           <div class="row">
           <div id="plotBox" class="well">
             <h3>Plot</h3>
-            ${movie.Plot}
+            <p>${movie.Plot}</P>
             <hr>
             <a href="http://imdb.com/title/${movie.imdbID}" target="_blank"><button class="imdbBtn">VIEW IMDB</button></a>
           </div>

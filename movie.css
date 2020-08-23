@@ -1,4 +1,145 @@
 @media only screen 
+  and (min-width: 481px)
+  {
+    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Big Noodle",Arial,serif;
+          -webkit-font-smoothing: antialiased;
+    }
+    
+    body {
+      background-color: #282c34;
+    }
+    
+    form {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    
+    h1 {
+      color: white;
+      text-shadow: 3px 3px 3px goldenrod;
+      font-size: 90px;
+      font-weight: 700;
+      float: right;
+      margin: 30px 400px 0 0;
+    }
+
+    h2 {
+      color: white;
+      text-align: center;
+      margin-bottom:  20px;
+    }
+    
+    h3 {
+      background-color: rgba(0, 0, 0, 0);
+      color: goldenrod;
+      font-size: 42px;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 2px 2px black;
+    }
+    
+    h5 {
+      width: 333px;
+      color: white;
+      position: relative;
+      top: 10px;
+      left: calc(50% - 166.5px);
+      margin-bottom: 20px;
+    }
+
+    strong  {
+      color: goldenrod;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    p {
+      color: white;
+    }
+    
+    img {
+      height: 500px;
+      width: 333px;
+      border: 2px solid goldenrod;
+    }
+    
+    .jumbotron {
+      width: 95%;
+      background-image: url("assets/hollywood-sign.jpg");
+      background-size: 100% 300px;
+      position: relative;
+      top: 100px;
+      left: 2.5%;
+    }
+
+    #homeBtn {
+      position: relative;
+      left: calc(50% - 75px);
+      margin-bottom:  40px;
+    }
+    
+    
+    .logo {
+      position: relative;
+      left: 400px;
+      top: 20px;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 50px;
+      border: 3px solid #282c34;
+    }
+    
+    #moviesContainer {
+      position: relative;
+      top: 200px;
+    }
+    
+    #searchText {
+      width:  500px;
+      position: relative;
+      top: -50px;
+      left: calc(50% - 250px);
+    }
+    
+    button, #movieDetails {
+      margin-bottom: 20px;
+      color: #282c34;
+      background: goldenrod;
+      border: 2px solid #282c34;
+      border-radius: 5px;
+      font-weight: 600;
+      width: 125px;
+      padding: 1px 0;
+    }
+    
+    #search {
+      width: 100px;
+      position: relative;
+      top: 50px;
+      left: calc(50% - 50px);
+      background-color: goldenrod;
+      color: #282c34;
+      border: 2px solid #282c34;
+      border-radius: 5px;
+    }
+    
+    #search-text {
+      color: goldenrod;
+      font-weight: 700;
+      font-size: 36px;
+      text-shadow: 5px solid black;
+      position: relative;
+      bottom: 150px;
+    }
+
+
+  }
+
+
+@media only screen 
   and (max-width: 480px)
   {
 
