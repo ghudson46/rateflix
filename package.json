@@ -19,6 +19,9 @@
   "homepage": "https://github.com/ghudson46/rateflix#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "inquirer": "^7.3.3"
-  }
+    "inquire": "^0.4.8",
+    "inquirer": "^7.3.3",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {}
 }
