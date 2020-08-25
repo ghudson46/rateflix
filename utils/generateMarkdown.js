@@ -1,7 +1,7 @@
-// generate markdown 
-var generateMarkdown = data => {
+// function to generate markdown for README
+var generateMarkdown = function(data) {
 
-  // licenses
+  // license markdown
   const licenses = {
     MIT: {
       name: "MIT",
@@ -18,68 +18,55 @@ var generateMarkdown = data => {
       url: "https://www.apache.org/licenses/LICENSE-2.0",
       badge: "https://img.shields.io/badge/License-Apache%202.0-blue.svg"
     },
-    BSD: {
-      name: "BSD",
-      url: "https://opensource.org/licenses/BSD-3-Clause",
-      badge: "https://img.shields.io/badge/License-BSD%203--Clause-blue.svg"
+    Other: {
+      name: "Unspecified (user specific)",
+      url: "",
+      badge: ""
     }
-     
   }
 
   // license switch
   let license = null;
-  switch(data.license) {
+  switch (data.license){
     case "1": license = licenses.MIT; break;
     case "2": license = licenses.GPL; break;
     case "3": license = licenses.Apache; break;
-    default:
-    case "4": license = licenses.BSD; break;
+    default: 
+    case "4": license = licenses.Other; break;
   }
 
   // markdown
   return `# ${data.title}
-  
   ## Table of Contents
-  - [Description] (#Description)
-  - [Installation] (#Installation)
+  - [Description](#Description)
+  - [Installation](#Installation)
   - [Usage](#Usage)
   - [License](#License)
   - [Contributing](#Contributing)
   - [Tests](#Tests)
   - [Questions](#Questions)
-
   ## Description
-  ![badge] (${license.badge})
-  [App Link] (${data.deployed})
-  ![App IMG] (${data.appImg})
-
+  ![badge](${license.badge})
+  [App Link](${data.deployed})
+  ![App Img](${data.appImg})
   ${data.description}
-
   ## Installation
   ${data.install}
-
   ## Usage
   ${data.usage}
-
-  ## License 
+  ## License
   [${license.name}](${license.url})
-
   ## Contributing
   ${data.contribute}
-
   ## Tests
   ${data.test}
-
   ## Questions
-  [GitHub: ${data.username}](${data.profilegi})
+  [GitHub: ${data.gitUser}](${data.gitLink})
   [Email: ${data.email}](${data.email})
-  Contact me! ${data.contact}
-
+  Contact me! ${data.contactMe}
   `;
-
 }
 
 module.exports = {
   genMarkdown : generateMarkdown
 }
-
